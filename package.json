@@ -1,0 +1,39 @@
+{
+  "name": "resolve-package-json",
+  "version": "1.0.0",
+  "description": "package.json dependency resolver",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/ | tap-spec",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodesource/resolve-package-json.git"
+  },
+  "keywords": [
+    "resolve",
+    "package",
+    "dependencies",
+    "npm"
+  ],
+  "author": "NodeSource Inc. <npm@nodesource.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodesource/resolve-package-json/issues"
+  },
+  "homepage": "https://github.com/nodesource/resolve-package-json#readme",
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "client-request": "^2.2.0",
+    "debug": "^3.0.1",
+    "npm-package-arg": "^5.1.2",
+    "semver": "^5.4.1",
+    "which": "^1.3.0"
+  }
+}

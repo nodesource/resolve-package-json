@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "debug": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/debug/-/debug-3.0.1.tgz",
+      "dependencies": {
+        "ms": {
+          "version": "2.0.0",
+          "resolved": "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz"
+        }
+      }
+    }
+  }
+}

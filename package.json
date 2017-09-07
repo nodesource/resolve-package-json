@@ -1,6 +1,6 @@
 {
   "name": "resolve-package-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "package.json dependency resolver",
   "main": "index.js",
   "scripts": {

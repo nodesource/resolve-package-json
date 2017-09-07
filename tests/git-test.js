@@ -16,7 +16,8 @@ test('git resolver - unshort@julianduque/node-unshort', t => {
 
 test('git resolver - repo not found', t => {
   resolver({ anunknownthing: 'arepo/doesntexist' }, (err, result) => {
-    t.error(!err, 'it should fail')
+    t.error(err, 'it should not fail')
+    t.deepEqual(result, {}, 'result should be empty')
     t.end()
   })
 })

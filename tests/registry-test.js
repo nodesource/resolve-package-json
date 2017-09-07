@@ -15,7 +15,8 @@ test('registry resolver - debug@3.0.1', t => {
 
 test('registry resolver - package not found', t => {
   resolver({ anunknownthing: '*' }, (err, result) => {
-    t.error(!err, 'it should fail')
+    t.error(err, 'it should not fail')
+    t.deepEqual(result, {}, 'result should be empty')
     t.end()
   })
 })

@@ -13,6 +13,14 @@ test('registry resolver - debug@3.0.1', t => {
   })
 })
 
+test('registry resolver - debug@>=3.0.1 <=3.0.1', t => {
+  resolver({ debug: '>=3.0.1 <=3.0.1' }, (err, result) => {
+    t.error(err, 'it should not fail')
+    t.deepEqual(result, fixture, 'result should be equal')
+    t.end()
+  })
+})
+
 test('registry resolver - package not found', t => {
   resolver({ anunknownthing: '*' }, (err, result) => {
     t.error(err, 'it should not fail')
